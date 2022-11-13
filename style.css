@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background: rgb(147, 174, 198);
+}
+.copyright {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+.copyright h1 {
+    font: 22px 'Noto Serif', serif;
+}
+.block {
+    width: 300px;
+}
+.block header {
+    display: flex;
+    position: relative;
+}
+.block header input {
+    flex-grow: 1;
+    padding: 0 20px 0 10px;
+    font: 16px sans-serif;
+    border-bottom-left-radius: 20px;
+}
+.block header .add {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background: #000;
+    color: #fff;
+    font: bold 18px sans-serif;
+    cursor: pointer;
+    border-top-right-radius: 20px;
+    transition: 0.2s;
+    user-select: none;
+}
+.block header .add:hover {
+    background: greenyellow;
+    color: black;
+}
+.block header .clear {
+    color: rgb(0, 115, 255);
+    background: transparent;
+    font: 600 16px Verdana;
+    position: absolute;
+    right: 37px;
+    top: 5px;
+    transition: 0.2s;
+    user-select: none;
+    display: none;
+    cursor: pointer;
+}
+.block .items {
+    max-height: 85vh;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.block .items::-webkit-scrollbar {
+    width: 5px;
+}
+.block .items::-webkit-scrollbar-button {
+    height: 0;
+}
+.block .items::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.block .items .item {
+    display: flex;
+    padding: 10px 0 10px 10px;
+    position: relative;
+}
+.block .items .item p {
+    max-width: 230px;
+    font: 18px sans-serif;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    letter-spacing: 2px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.block .items .item button {
+    width: 30px;
+    height: 30px;
+    color: red;
+    text-shadow: 0 0 2px #000;
+    background: transparent;
+    font: 18px sans-serif;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    right: 0;
+}
+.block .items .item img {
+    width: 20px; 
+    height: 20px; 
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    right: 30px;
+}
+
+
+
+
+
+
+
+
